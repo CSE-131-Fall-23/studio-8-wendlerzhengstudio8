@@ -15,6 +15,10 @@ public class Question {
 		System.out.println(this.prompt + "(" + this.points + " points)");
 	}
 	
+	public String getprompt() {
+		return prompt;
+	}
+	
 	public int checkAnswer(String givenAnswer) {
 		if(answer.equals(givenAnswer)) { //String comparison
 			return this.points;
